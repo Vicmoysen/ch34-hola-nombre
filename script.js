@@ -32,11 +32,7 @@ const printInDOM = (users) => {
     celdaID.appendChild(headerID);
     hileraH.appendChild(celdaID);
 
-    const celdaEmail = document.createElement("th");
-    const headerEmail = document.createTextNode("Email");
-    celdaEmail.appendChild(headerEmail);
-    hileraH.appendChild(celdaEmail);
-
+    
     const celdaFName = document.createElement("th");
     const headerFName = document.createTextNode("First Name");
     celdaFName.appendChild(headerFName);
@@ -46,6 +42,12 @@ const printInDOM = (users) => {
     const headerLName = document.createTextNode("Last Name");
     celdaLName.appendChild(headerLName);
     hileraH.appendChild(celdaLName);
+
+    const celdaEmail = document.createElement("th");
+    const headerEmail = document.createTextNode("Email");
+    celdaEmail.appendChild(headerEmail);
+    hileraH.appendChild(celdaEmail);
+
     
     const celdaAvatar = document.createElement("th");
     const headerAvatar = document.createTextNode("Avatar");
@@ -65,10 +67,7 @@ const printInDOM = (users) => {
             celda.appendChild(textID);
             hilera.appendChild(celda);
 
-            celda = document.createElement("td");
-            const textEmail = document.createTextNode(user.email);
-            celda.appendChild(textEmail);
-            hilera.appendChild(celda);
+            
 
             celda = document.createElement("td");
             const textFName = document.createTextNode(user.first_name);
@@ -78,6 +77,11 @@ const printInDOM = (users) => {
             celda = document.createElement("td");
             const textLName = document.createTextNode(user.last_name);
             celda.appendChild(textLName);
+            hilera.appendChild(celda);
+
+            celda = document.createElement("td");
+            const textEmail = document.createTextNode(user.email);
+            celda.appendChild(textEmail);
             hilera.appendChild(celda);
 
             celda = document.createElement("td");
